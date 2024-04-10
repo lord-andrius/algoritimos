@@ -17,11 +17,11 @@ programa
 			classificacao = "Cordeiro"
 		} senao se(sexo != 'm' ou sexo != 'M' e idade <= 6) {
 			classificacao = "Cordeira"
-		} senao se(sexo == 'm' ou sexo == 'M' e idade <= 12) {
+		} senao se(sexo == 'm' ou sexo == 'M' e idade <= 18) {
 			classificacao = "Borrego"	
-		} senao se(sexo != 'm' ou sexo != 'M' e idade <= 12) {
+		} senao se(sexo != 'm' ou sexo != 'M' e idade <= 18) {
 			classificacao = "Borrega"		
-		} senao se(idade > 18) {
+		} senao {
 			se(sexo == 'm' ou sexo == 'M') {
 				se(capado == 's' ou capado == 'S') {
 					classificacao = "Capão"	
